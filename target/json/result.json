@@ -1,0 +1,81 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-01T16:17:06.569Z",
+        "line": 4,
+        "name": "Basic Search",
+        "description": "",
+        "id": "googlesearch;basic-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2995900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open Google search page",
+            "match": {
+              "location": "org.Framework.MyStepdefs.iOpenGoogleSearchPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I type \"test automation\" in search bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test automation\"",
+                  "offset": 7
+                }
+              ],
+              "location": "org.Framework.MyStepdefs.iTypeInSearchBar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on search button",
+            "match": {
+              "location": "org.Framework.MyStepdefs.iClickOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"test automation\" should be mentioned in the results",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test automation\"",
+                  "offset": 0
+                }
+              ],
+              "location": "org.Framework.MyStepdefs.shouldBeMentionedInTheResults(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "GoogleSearch",
+    "description": "  As a user I\u0027d like to test google search functionality",
+    "id": "googlesearch",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/org/Framework/Quete3.feature",
+    "tags": []
+  }
+]
